@@ -18,6 +18,7 @@ async function getUserData() {
     }
     const userPosts = await postsResponse.json();
 
+
     // Retrieve the user's followers
     const followersResponse = await fetch(
       "https://jsonplaceholder.typicode.com/users/1/followers"
